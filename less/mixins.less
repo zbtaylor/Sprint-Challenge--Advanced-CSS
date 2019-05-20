@@ -6,15 +6,25 @@
     width: 100%;
 }
 
-.button(@bg-color, @font-color) {
+.swap-colors-on-hover(@bg-color, @font-color) {
     color: @font-color;
     background-color: @bg-color;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @font-color;
+    }
+}
+
+.button(@bg-color, @font-color) {
     padding: .6rem 1.5rem;
     font-size: 1.6rem;
     font-weight: bold;
     border-radius: .4rem;
     display: inline-block;
     cursor: pointer;
+
+    .swap-colors-on-hover(@bg-color, @font-color);
 
     &:hover {
         color: @bg-color;
