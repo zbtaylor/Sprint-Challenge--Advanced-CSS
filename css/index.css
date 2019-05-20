@@ -137,6 +137,11 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+@media (min-width: 1024px) {
+  body {
+    padding-top: 98px;
+  }
+}
 h1,
 h2,
 h3,
@@ -168,6 +173,14 @@ img {
   padding: 1.5rem 0 1rem 0;
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+}
+@media (min-width: 1024px) {
+  .main-nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(246, 246, 246, 0.9);
+  }
 }
 .main-nav h1 {
   font-size: 3.6rem;

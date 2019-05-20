@@ -6,6 +6,11 @@
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
 
+    @media @desktop {
+        .stay-put();
+        background: fade(@nav-bg, 90%);
+    }
+
     h1 {
         font-size: 3.6rem;
         padding-bottom: 2rem;
