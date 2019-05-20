@@ -1,1 +1,23 @@
 // Mixins Here
+
+.button(@bg-color, @font-color) {
+    color: @font-color;
+    background-color: @bg-color;
+    padding: .6rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: .4rem;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @font-color;
+    }
+
+    @media @phone {
+        width: 100%;
+        padding: 2.5rem 0;
+        text-align: center;
+    }
+}
